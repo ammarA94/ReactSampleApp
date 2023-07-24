@@ -1,0 +1,77 @@
+import React from 'react'
+
+export default function NavBar(props) {
+  return (
+    <>
+      {/* Navigation */}
+  <nav className="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div className="container">
+      {/* Image Logo */}
+      <a className="navbar-brand logo-image" href="index.html">
+      <img src={props.logoFile} alt="Logo" />
+      </a>
+      {/* Text Logo - Use this if you don't have a graphic logo */}
+      {/* <a class="navbar-brand logo-text page-scroll" href="index.html">Spify</a> */}
+      <button
+        className="navbar-toggler p-0 border-0"
+        type="button"
+        data-toggle="offcanvas"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
+      <div
+        className="navbar-collapse offcanvas-collapse"
+        id="navbarsExampleDefault"
+      >
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <a className="nav-link page-scroll" href="#header">
+              Home <span className="sr-only">(current)</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link page-scroll" href="#details">
+              Details
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link page-scroll" href="#strengths">
+              Strengths
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link page-scroll" href="#about">
+              About
+            </a>
+          </li>
+       
+          <li className="nav-item">
+            <a className="nav-link page-scroll" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <span className="nav-item social-icons">
+          <span className="fa-stack">
+            <a href="#your-link">
+              <i className="fas fa-circle fa-stack-2x" />
+              <i className="fab fa-facebook-f fa-stack-1x" />
+            </a>
+          </span>
+          <span className="fa-stack">
+            <a href="#your-link">
+              <i className="fas fa-circle fa-stack-2x" />
+              <i className="fab fa-twitter fa-stack-1x" />
+            </a>
+          </span>
+        </span>
+      </div>{" "}
+      {/* end of navbar-collapse */}
+    </div>{" "}
+    {/* end of container */}
+  </nav>{" "}
+  {/* end of navbar */}
+  {/* end of navigation */}
+    </>
+  )
+}
